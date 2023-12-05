@@ -8,16 +8,16 @@ import net.minecraft.client.renderer.entity.EntityRendererProvider;
 import net.minecraft.client.model.geom.ModelLayers;
 import net.minecraft.client.model.HumanoidModel;
 
-import net.mcreator.neworder.entity.imperial.ImperialSoldierEntity;
+import net.mcreator.neworder.entity.empire.EmpireSoldierEntity;
 
-public class ImperialSoldierRenderer extends HumanoidMobRenderer<ImperialSoldierEntity, HumanoidModel<ImperialSoldierEntity>> {
-	public ImperialSoldierRenderer(EntityRendererProvider.Context context) {
+public class EmpireSoldierRenderer extends HumanoidMobRenderer<EmpireSoldierEntity, HumanoidModel<EmpireSoldierEntity>> {
+	public EmpireSoldierRenderer(EntityRendererProvider.Context context) {
 		super(context, new HumanoidModel(context.bakeLayer(ModelLayers.PLAYER)), 0.5f);
 		this.addLayer(new HumanoidArmorLayer(this, new HumanoidModel(context.bakeLayer(ModelLayers.PLAYER_INNER_ARMOR)), new HumanoidModel(context.bakeLayer(ModelLayers.PLAYER_OUTER_ARMOR)), context.getModelManager()));
 	}
 
 	@Override
-	public ResourceLocation getTextureLocation(ImperialSoldierEntity entity) {
+	public ResourceLocation getTextureLocation(EmpireSoldierEntity entity) {
 		return new ResourceLocation("new_order:textures/entities/desert_soldier.png");
 	}
 }

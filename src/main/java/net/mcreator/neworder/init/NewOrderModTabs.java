@@ -23,8 +23,8 @@ public class NewOrderModTabs {
 	public static void buildTabContentsVanilla(BuildCreativeModeTabContentsEvent tabData) {
 
 		if (tabData.getTabKey() == CreativeModeTabs.SPAWN_EGGS) {
-			tabData.accept(NewOrderModItems.IMPERIAL_SOLDIER_SPAWN_EGG.get());
-			tabData.accept(NewOrderModItems.IMPERIAL_ARCHER_SPAWN_EGG.get());
+			tabData.accept(NewOrderModItems.EMPIRE_SOLDIER_SPAWN_EGG.get());
+			tabData.accept(NewOrderModItems.EMPIRE_ARCHER_SPAWN_EGG.get());
 		}
 	}
 }

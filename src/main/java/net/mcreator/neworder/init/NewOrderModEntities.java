@@ -16,21 +16,18 @@ import net.minecraft.world.entity.MobCategory;
 import net.minecraft.world.entity.EntityType;
 import net.minecraft.world.entity.Entity;
 
-import net.mcreator.neworder.entity.imperial.ImperialSoldierEntity;
-import net.mcreator.neworder.entity.imperial.ImperialArcherEntity;
-import net.mcreator.neworder.entity.ImperialSoldierEntity;
+import net.mcreator.neworder.entity.empire.EmpireSoldierEntity;
+import net.mcreator.neworder.entity.empire.EmpireArcherEntity;
 import net.mcreator.neworder.NewOrderMod;
 
 @Mod.EventBusSubscriber(bus = Mod.EventBusSubscriber.Bus.MOD)
 public class NewOrderModEntities {
 	public static final DeferredRegister<EntityType<?>> REGISTRY = DeferredRegister.create(ForgeRegistries.ENTITY_TYPES, NewOrderMod.MODID);
-	public static final RegistryObject<EntityType<ImperialSoldierEntity>> IMPERIAL_SOLDIER = register("imperial_soldier",
-			EntityType.Builder.<ImperialSoldierEntity>of(ImperialSoldierEntity::new, MobCategory.CREATURE).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(3).setCustomClientFactory(ImperialSoldierEntity::new)
-
+	public static final RegistryObject<EntityType<EmpireSoldierEntity>> EMPIRE_SOLDIER = register("empire_soldier",
+			EntityType.Builder.<EmpireSoldierEntity>of(EmpireSoldierEntity::new, MobCategory.CREATURE).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(3).setCustomClientFactory(EmpireSoldierEntity::new)
 					.sized(0.6f, 1.8f));
-	public static final RegistryObject<EntityType<ImperialArcherEntity>> IMPERIAL_ARCHER = register("imperial_archer",
-			EntityType.Builder.<ImperialArcherEntity>of(ImperialArcherEntity::new, MobCategory.CREATURE).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(3).setCustomClientFactory(ImperialArcherEntity::new)
-
+	public static final RegistryObject<EntityType<EmpireArcherEntity>> EMPIRE_ARCHER = register("empire_archer",
+			EntityType.Builder.<EmpireArcherEntity>of(EmpireArcherEntity::new, MobCategory.CREATURE).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(3).setCustomClientFactory(EmpireArcherEntity::new)
 					.sized(0.6f, 1.8f));
 
 	private static <T extends Entity> RegistryObject<EntityType<T>> register(String registryname, EntityType.Builder<T> entityTypeBuilder) {
@@ -40,14 +37,14 @@ public class NewOrderModEntities {
 	@SubscribeEvent
 	public static void init(FMLCommonSetupEvent event) {
 		event.enqueueWork(() -> {
-			ImperialSoldierEntity.init();
-			ImperialArcherEntity.init();
+			EmpireSoldierEntity.init();
+			EmpireArcherEntity.init();
 		});
 	}
 
 	@SubscribeEvent
 	public static void registerAttributes(EntityAttributeCreationEvent event) {
-		event.put(IMPERIAL_SOLDIER.get(), ImperialSoldierEntity.createAttributes().build());
-		event.put(IMPERIAL_ARCHER.get(), ImperialArcherEntity.createAttributes().build());
+		event.put(EMPIRE_SOLDIER.get(), EmpireSoldierEntity.createAttributes().build());
+		event.put(EMPIRE_ARCHER.get(), EmpireArcherEntity.createAttributes().build());
 	}
 }

@@ -1,34 +1,34 @@
 {
   "mod_elements": [
     {
-      "name": "ImperialSoldier",
+      "name": "empireSoldier",
       "type": "livingentity",
       "sortid": 2,
       "compiles": true,
       "locked_code": false,
-      "registry_name": "imperial_soldier",
+      "registry_name": "empire_soldier",
       "metadata": {
         "files": [
-          "src/main/java/net/mcreator/neworder/client/renderer/ImperialSoldierRenderer.java",
-          "src/main/java/net/mcreator/neworder/entity/ImperialSoldierEntity.java",
-          "src/main/resources/assets/new_order/models/item/imperial_soldier_spawn_egg.json"
+          "src/main/java/net/mcreator/neworder/client/renderer/empireSoldierRenderer.java",
+          "src/main/java/net/mcreator/neworder/entity/empireSoldierEntity.java",
+          "src/main/resources/assets/new_order/models/item/empire_soldier_spawn_egg.json"
         ]
       }
     },
     {
-      "name": "ImperialChest",
+      "name": "empireChest",
       "type": "armor",
       "sortid": 3,
       "compiles": true,
       "locked_code": false,
-      "registry_name": "imperial_chest",
+      "registry_name": "empire_chest",
       "metadata": {
         "files": [
-          "src/main/resources/assets/new_order/models/item/imperial_chest_helmet.json",
-          "src/main/resources/assets/new_order/models/item/imperial_chest_chestplate.json",
-          "src/main/java/net/mcreator/neworder/item/ImperialChestItem.java",
-          "src/main/resources/assets/new_order/models/item/imperial_chest_leggings.json",
-          "src/main/resources/assets/new_order/models/item/imperial_chest_boots.json"
+          "src/main/resources/assets/new_order/models/item/empire_chest_helmet.json",
+          "src/main/resources/assets/new_order/models/item/empire_chest_chestplate.json",
+          "src/main/java/net/mcreator/neworder/item/empireChestItem.java",
+          "src/main/resources/assets/new_order/models/item/empire_chest_leggings.json",
+          "src/main/resources/assets/new_order/models/item/empire_chest_boots.json"
         ]
       }
     },
@@ -60,12 +60,12 @@
   "sound_elements": [],
   "language_map": {
     "en_us": {
-      "item.new_order.imperial_soldier_spawn_egg": "Imperial Soldier Spawn Egg",
-      "item.new_order.imperial_chest_chestplate": "Imperial Chest 胸甲",
-      "entity.new_order.imperial_soldier": "Imperial Soldier",
-      "item.new_order.imperial_chest_leggings": "Imperial Chest 护腿",
-      "item.new_order.imperial_chest_boots": "Imperial Chest 靴子",
-      "item.new_order.imperial_chest_helmet": "Imperial Chest 头盔"
+      "item.new_order.empire_soldier_spawn_egg": "empire Soldier Spawn Egg",
+      "item.new_order.empire_chest_chestplate": "empire Chest 胸甲",
+      "entity.new_order.empire_soldier": "empire Soldier",
+      "item.new_order.empire_chest_leggings": "empire Chest 护腿",
+      "item.new_order.empire_chest_boots": "empire Chest 靴子",
+      "item.new_order.empire_chest_helmet": "empire Chest 头盔"
     }
   },
   "foldersRoot": {

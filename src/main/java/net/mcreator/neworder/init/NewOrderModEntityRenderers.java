@@ -9,14 +9,14 @@ import net.minecraftforge.eventbus.api.SubscribeEvent;
 import net.minecraftforge.client.event.EntityRenderersEvent;
 import net.minecraftforge.api.distmarker.Dist;
 
-import net.mcreator.neworder.client.renderer.ImperialSoldierRenderer;
-import net.mcreator.neworder.client.renderer.ImperialArcherRenderer;
+import net.mcreator.neworder.client.renderer.EmpireSoldierRenderer;
+import net.mcreator.neworder.client.renderer.EmpireArcherRenderer;
 
 @Mod.EventBusSubscriber(bus = Mod.EventBusSubscriber.Bus.MOD, value = Dist.CLIENT)
 public class NewOrderModEntityRenderers {
 	@SubscribeEvent
 	public static void registerEntityRenderers(EntityRenderersEvent.RegisterRenderers event) {
-		event.registerEntityRenderer(NewOrderModEntities.IMPERIAL_SOLDIER.get(), ImperialSoldierRenderer::new);
-		event.registerEntityRenderer(NewOrderModEntities.IMPERIAL_ARCHER.get(), ImperialArcherRenderer::new);
+		event.registerEntityRenderer(NewOrderModEntities.EMPIRE_SOLDIER.get(), EmpireSoldierRenderer::new);
+		event.registerEntityRenderer(NewOrderModEntities.EMPIRE_ARCHER.get(), EmpireArcherRenderer::new);
 	}
 }

@@ -1,8 +1,9 @@
 
-package net.mcreator.neworder.entity.imperial;
+package net.mcreator.neworder.entity;
 
+import net.mcreator.neworder.entity.empire.EmpireEntity;
+import net.mcreator.neworder.enums.Camp;
 import net.minecraftforge.registries.ForgeRegistries;
-import net.minecraftforge.network.PlayMessages;
 import net.minecraftforge.network.NetworkHooks;
 
 import net.minecraft.world.level.Level;
@@ -21,7 +22,6 @@ import net.minecraft.world.entity.PathfinderMob;
 import net.minecraft.world.entity.MobType;
 import net.minecraft.world.entity.Mob;
 import net.minecraft.world.entity.LivingEntity;
-import net.minecraft.world.entity.EquipmentSlot;
 import net.minecraft.world.entity.EntityType;
 import net.minecraft.world.entity.Entity;
 import net.minecraft.world.damagesource.DamageSource;
@@ -33,19 +33,16 @@ import net.minecraft.network.protocol.game.ClientGamePacketListener;
 import net.minecraft.network.protocol.Packet;
 
 import net.mcreator.neworder.procedures.NewOrderRightClickProcedure;
-import net.mcreator.neworder.init.NewOrderModEntities;
 
-public class ImperialSoldierEntity extends PathfinderMob {
-	public ImperialSoldierEntity(PlayMessages.SpawnEntity packet, Level world) {
-		this(NewOrderModEntities.IMPERIAL_SOLDIER.get(), world);
-	}
 
-	public ImperialSoldierEntity(EntityType<ImperialSoldierEntity> type, Level world) {
+public class TemplateEntity extends PathfinderMob {
+	protected final Camp camp;
+	public TemplateEntity(EntityType<? extends TemplateEntity> type, Level world, Camp camp) {
 		super(type, world);
+		this.camp = camp;
 		setMaxUpStep(0.6f);
 		xpReward = 0;
 		setNoAi(false);
-		this.setItemSlot(EquipmentSlot.MAINHAND, new ItemStack(Items.IRON_SWORD));
 	}
 
 	@Override
@@ -125,6 +122,10 @@ public class ImperialSoldierEntity extends PathfinderMob {
 	}
 
 	public static void init() {
+	}
+
+	public Camp getCamp() {
+		return this.camp;
 	}
 
 	public static AttributeSupplier.Builder createAttributes() {

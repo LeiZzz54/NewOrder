@@ -1,35 +1,35 @@
 {
   "mod_elements": [
     {
-      "name": "ImperialSoldier",
+      "name": "empireSoldier",
       "type": "livingentity",
       "sortid": 2,
       "compiles": true,
       "locked_code": true,
-      "registry_name": "imperial_soldier",
+      "registry_name": "empire_soldier",
       "metadata": {
         "files": [
-          "src/main/java/net/mcreator/neworder/client/renderer/ImperialSoldierRenderer.java",
-          "src/main/java/net/mcreator/neworder/entity/ImperialSoldierEntity.java",
-          "src/main/resources/assets/new_order/models/item/imperial_soldier_spawn_egg.json",
-          "src/main/resources/data/new_order/forge/biome_modifier/imperial_soldier_biome_modifier.json"
+          "src/main/java/net/mcreator/neworder/client/renderer/empireSoldierRenderer.java",
+          "src/main/java/net/mcreator/neworder/entity/empireSoldierEntity.java",
+          "src/main/resources/assets/new_order/models/item/empire_soldier_spawn_egg.json",
+          "src/main/resources/data/new_order/forge/biome_modifier/empire_soldier_biome_modifier.json"
         ]
       }
     },
     {
-      "name": "ImperialChest",
+      "name": "empireChest",
       "type": "armor",
       "sortid": 3,
       "compiles": true,
       "locked_code": false,
-      "registry_name": "imperial_chest",
+      "registry_name": "empire_chest",
       "metadata": {
         "files": [
-          "src/main/resources/assets/new_order/models/item/imperial_chest_helmet.json",
-          "src/main/resources/assets/new_order/models/item/imperial_chest_chestplate.json",
-          "src/main/java/net/mcreator/neworder/item/ImperialChestItem.java",
-          "src/main/resources/assets/new_order/models/item/imperial_chest_leggings.json",
-          "src/main/resources/assets/new_order/models/item/imperial_chest_boots.json"
+          "src/main/resources/assets/new_order/models/item/empire_chest_helmet.json",
+          "src/main/resources/assets/new_order/models/item/empire_chest_chestplate.json",
+          "src/main/java/net/mcreator/neworder/item/empireChestItem.java",
+          "src/main/resources/assets/new_order/models/item/empire_chest_leggings.json",
+          "src/main/resources/assets/new_order/models/item/empire_chest_boots.json"
         ]
       }
     },
@@ -89,63 +89,63 @@
       }
     },
     {
-      "name": "ImperialArcher",
+      "name": "empireArcher",
       "type": "livingentity",
       "sortid": 7,
       "compiles": true,
       "locked_code": false,
-      "registry_name": "imperial_archer",
+      "registry_name": "empire_archer",
       "metadata": {
         "files": [
-          "src/main/resources/assets/new_order/models/item/imperial_archer_spawn_egg.json",
-          "src/main/resources/data/new_order/forge/biome_modifier/imperial_archer_biome_modifier.json",
-          "src/main/java/net/mcreator/neworder/client/renderer/ImperialArcherRenderer.java",
-          "src/main/java/net/mcreator/neworder/entity/ImperialArcherEntity.java"
+          "src/main/resources/assets/new_order/models/item/empire_archer_spawn_egg.json",
+          "src/main/resources/data/new_order/forge/biome_modifier/empire_archer_biome_modifier.json",
+          "src/main/java/net/mcreator/neworder/client/renderer/empireArcherRenderer.java",
+          "src/main/java/net/mcreator/neworder/entity/empireArcherEntity.java"
         ]
       }
     },
     {
-      "name": "ImperialGeneral",
+      "name": "empireGeneral",
       "type": "livingentity",
       "sortid": 8,
       "compiles": true,
       "locked_code": true,
-      "registry_name": "imperial_general",
+      "registry_name": "empire_general",
       "metadata": {
         "files": [
-          "src/main/resources/assets/new_order/models/item/imperial_general_spawn_egg.json",
-          "src/main/java/net/mcreator/neworder/entity/ImperialGeneralEntity.java",
-          "src/main/java/net/mcreator/neworder/client/renderer/ImperialGeneralRenderer.java"
+          "src/main/resources/assets/new_order/models/item/empire_general_spawn_egg.json",
+          "src/main/java/net/mcreator/neworder/entity/empireGeneralEntity.java",
+          "src/main/java/net/mcreator/neworder/client/renderer/empireGeneralRenderer.java"
         ]
       },
-      "path": "~/Imperial"
+      "path": "~/empire"
     }
   ],
   "variable_elements": [],
   "sound_elements": [],
   "language_map": {
     "en_us": {
-      "item.new_order.imperial_soldier_spawn_egg": "Imperial Soldier Spawn Egg",
-      "item.new_order.imperial_chest_chestplate": "Imperial Chest 胸甲",
-      "entity.new_order.imperial_general": "Imperial General",
-      "entity.new_order.imperial_soldier": "Imperial Soldier",
-      "item.new_order.imperial_chest_leggings": "Imperial Chest 护腿",
-      "item.new_order.imperial_chest_boots": "Imperial Chest 靴子",
-      "entity.new_order.imperial_archer": "Imperial Soldier",
-      "item.new_order.imperial_archer_spawn_egg": "Imperial Soldier Spawn Egg",
+      "item.new_order.empire_soldier_spawn_egg": "empire Soldier Spawn Egg",
+      "item.new_order.empire_chest_chestplate": "empire Chest 胸甲",
+      "entity.new_order.empire_general": "empire General",
+      "entity.new_order.empire_soldier": "empire Soldier",
+      "item.new_order.empire_chest_leggings": "empire Chest 护腿",
+      "item.new_order.empire_chest_boots": "empire Chest 靴子",
+      "entity.new_order.empire_archer": "empire Soldier",
+      "item.new_order.empire_archer_spawn_egg": "empire Soldier Spawn Egg",
       "item.new_order.holy_soldier_spawn_egg": "Holy Soldier Spawn Egg",
-      "item.new_order.republic_soldier_spawn_egg": "Imperial Soldier Spawn Egg",
-      "item.new_order.imperial_chest_helmet": "Imperial Chest 头盔",
-      "entity.new_order.republic_soldier": "Imperial Soldier",
+      "item.new_order.republic_soldier_spawn_egg": "empire Soldier Spawn Egg",
+      "item.new_order.empire_chest_helmet": "empire Chest 头盔",
+      "entity.new_order.republic_soldier": "empire Soldier",
       "entity.new_order.holy_soldier": "Holy Soldier",
-      "item.new_order.imperial_general_spawn_egg": "Imperial General Spawn Egg"
+      "item.new_order.empire_general_spawn_egg": "empire General Spawn Egg"
     }
   },
   "foldersRoot": {
     "name": "~",
     "children": [
       {
-        "name": "Imperial",
+        "name": "empire",
         "children": []
       }
     ]
