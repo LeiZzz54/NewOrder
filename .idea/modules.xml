@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/NewOrder.main.iml" filepath="$PROJECT_DIR$/.idea/modules/NewOrder.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/NewOrder.test.iml" filepath="$PROJECT_DIR$/.idea/modules/NewOrder.test.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/com.yourname.modid.new_order.main.iml" filepath="$PROJECT_DIR$/.idea/modules/com.yourname.modid.new_order.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/com.yourname.modid.new_order.test.iml" filepath="$PROJECT_DIR$/.idea/modules/com.yourname.modid.new_order.test.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/new_order.main.iml" filepath="$PROJECT_DIR$/.idea/modules/new_order.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/new_order.test.iml" filepath="$PROJECT_DIR$/.idea/modules/new_order.test.iml" />
+    </modules>
+  </component>
+</project>

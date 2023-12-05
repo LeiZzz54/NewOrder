@@ -1,0 +1,126 @@
+{
+  "mod_elements": [
+    {
+      "name": "ImperialSoldier",
+      "type": "livingentity",
+      "sortid": 2,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "imperial_soldier",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/neworder/client/renderer/ImperialSoldierRenderer.java",
+          "src/main/java/net/mcreator/neworder/entity/ImperialSoldierEntity.java",
+          "src/main/resources/assets/new_order/models/item/imperial_soldier_spawn_egg.json"
+        ]
+      }
+    },
+    {
+      "name": "ImperialChest",
+      "type": "armor",
+      "sortid": 3,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "imperial_chest",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/new_order/models/item/imperial_chest_helmet.json",
+          "src/main/resources/assets/new_order/models/item/imperial_chest_chestplate.json",
+          "src/main/java/net/mcreator/neworder/item/ImperialChestItem.java",
+          "src/main/resources/assets/new_order/models/item/imperial_chest_leggings.json",
+          "src/main/resources/assets/new_order/models/item/imperial_chest_boots.json"
+        ]
+      }
+    },
+    {
+      "name": "NewOrderRightClick",
+      "type": "procedure",
+      "sortid": 6,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "new_order_right_click",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/neworder/procedures/NewOrderRightClickProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "sourceentity",
+            "type": "entity"
+          }
+        ]
+      }
+    },
+    {
+      "name": "ImperialArcher",
+      "type": "livingentity",
+      "sortid": 7,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "imperial_archer",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/new_order/models/item/imperial_archer_spawn_egg.json",
+          "src/main/java/net/mcreator/neworder/client/renderer/ImperialArcherRenderer.java",
+          "src/main/java/net/mcreator/neworder/entity/ImperialArcherEntity.java"
+        ]
+      }
+    },
+    {
+      "name": "ImperialCavalry",
+      "type": "livingentity",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "imperial_cavalry",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/new_order/models/item/imperial_cavalry_spawn_egg.json",
+          "src/main/java/net/mcreator/neworder/entity/ImperialCavalryEntity.java",
+          "src/main/java/net/mcreator/neworder/client/renderer/ImperialCavalryRenderer.java"
+        ]
+      }
+    }
+  ],
+  "variable_elements": [],
+  "sound_elements": [],
+  "language_map": {
+    "en_us": {
+      "item.new_order.imperial_soldier_spawn_egg": "Imperial Soldier Spawn Egg",
+      "item.new_order.imperial_chest_chestplate": "Imperial Chest 胸甲",
+      "entity.new_order.imperial_soldier": "Imperial Soldier",
+      "item.new_order.imperial_chest_leggings": "Imperial Chest 护腿",
+      "item.new_order.imperial_chest_boots": "Imperial Chest 靴子",
+      "entity.new_order.imperial_archer": "Imperial Soldier",
+      "item.new_order.imperial_archer_spawn_egg": "Imperial Soldier Spawn Egg",
+      "item.new_order.imperial_cavalry_spawn_egg": "Imperial Soldier Spawn Egg",
+      "item.new_order.imperial_chest_helmet": "Imperial Chest 头盔",
+      "entity.new_order.imperial_cavalry": "Imperial Soldier"
+    }
+  },
+  "foldersRoot": {
+    "name": "~",
+    "children": []
+  },
+  "workspaceSettings": {
+    "modid": "new_order",
+    "modName": "NewOrder",
+    "version": "1.0.0",
+    "author": "Lay, MCreator",
+    "websiteURL": "https://mcreator.net",
+    "license": "Academic Free License v3.0",
+    "disableForgeVersionCheck": true,
+    "serverSideOnly": false,
+    "requiredMods": [],
+    "dependencies": [],
+    "dependants": [],
+    "mcreatorDependencies": [],
+    "currentGenerator": "forge-1.20.1",
+    "modElementsPackage": "net.mcreator.neworder",
+    "lockBaseModFiles": false
+  },
+  "mcreatorVersion": 202300336712
+}
